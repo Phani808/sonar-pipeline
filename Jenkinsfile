@@ -14,7 +14,7 @@ pipeline {
                 sh 'mvn clean package'
             }
          }
-        stage('SonarQube analysis') {
+        stage('SonarQube analysi') {
 //    def scannerHome = tool 'SonarScanner 4.0';
         steps{
         withSonarQubeEnv(credentialsId: 'sonar1') { 
